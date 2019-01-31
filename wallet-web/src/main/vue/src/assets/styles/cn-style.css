@@ -1,0 +1,38 @@
+.cn-container{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.cn-wide-container{
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.cn-narrow-container{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
+.cn-rw-container{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.cn-flex{
+  display: flex;
+  flex-direction:row;
+}
+
+.cn-center-me{
+  text-align: center;
+}
+
+.cn-img-responsive{
+  max-width: 100%;
+  height: auto;
+}

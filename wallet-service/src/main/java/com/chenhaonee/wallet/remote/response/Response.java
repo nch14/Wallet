@@ -14,4 +14,6 @@ public class Response<T> {
 
     public T t;
 
+    public boolean success;
+
 }

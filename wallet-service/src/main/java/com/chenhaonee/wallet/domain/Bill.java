@@ -1,11 +1,10 @@
 package com.chenhaonee.wallet.domain;
 
 import com.chenhaonee.wallet.domain.enums.BillType;
+import com.chenhaonee.wallet.domain.enums.PalType;
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -29,7 +28,7 @@ public class Bill {
     /**
      * 涉及金额
      */
-    private double money;
+    private Integer money;
 
     /**
      * 发生时间
@@ -42,12 +41,19 @@ public class Bill {
     private Date dueTime;
 
     /**
+     * 支付类型
+     */
+    @Enumerated(EnumType.STRING)
+    private PalType palType;
+
+    /**
      * 账单类型
      */
+    @Enumerated(EnumType.STRING)
     private BillType billType;
 
     /**
      * 备注
      */
-    private String mojo;
+    private String memo;
 }

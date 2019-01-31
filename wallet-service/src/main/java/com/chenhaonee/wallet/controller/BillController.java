@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Created by chenhaonee at 2019/1/25
  */
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/bill")
 public class BillController {
@@ -20,7 +21,7 @@ public class BillController {
     private Response<Long> doBill(@PathVariable long userId,
                             @RequestBody CreateBillRequest request){
        Long billId = commandService.addBill(userId,request);
-       return new Response<Long>(billId);
+       return new Response<>(billId,true);
     }
 
 }

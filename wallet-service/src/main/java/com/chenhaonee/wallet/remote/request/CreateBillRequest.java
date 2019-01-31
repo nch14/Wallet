@@ -1,6 +1,7 @@
 package com.chenhaonee.wallet.remote.request;
 
 import com.chenhaonee.wallet.domain.enums.BillType;
+import com.chenhaonee.wallet.domain.enums.PalType;
 
 import java.util.Date;
 
@@ -24,6 +25,11 @@ public class CreateBillRequest {
     public Date dueTime;
 
     /**
+     * 支付类型
+     */
+    public PalType palType;
+
+    /**
      * 账单类型
      */
     public BillType billType;
@@ -31,5 +37,5 @@ public class CreateBillRequest {
     /**
      * 备注
      */
-    public String mojo;
+    public String memo;
 }
